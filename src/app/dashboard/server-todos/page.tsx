@@ -2,8 +2,8 @@ import prisma from "@/lib/prisma";
 import { NewTodo, TodosGrid } from "@/todos";
 
 export const metadata = {
-  title: "CRUD API REST",
-  description: "Make a CRUD of Todos using API REST",
+  title: "CRUD Server actions",
+  description: "Make a CRUD of Todos using server actions",
 };
 
 export default async function RestTodosPage() {
