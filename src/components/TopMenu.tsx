@@ -1,5 +1,5 @@
-import React from "react";
-import { CiMenuBurger, CiSearch, CiChat1, CiBellOn } from "react-icons/ci";
+import React from 'react';
+import { CiMenuBurger, CiSearch, CiChat1, CiBellOn, CiShoppingBasket } from 'react-icons/ci';
 
 export const TopMenu = () => {
   return (
@@ -35,6 +35,17 @@ export const TopMenu = () => {
           </button>
           <button className="flex items-center justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
             <CiBellOn size={25} />
+          </button>
+          <button className="flex items-center relative justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+            <span className="absolute flex h-4 w-4 ml-8 -mt-8">
+              <span className="animate-ping p-2 absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 align-middle items-center justify-center"></span>
+
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-sky-500 text-[0.55rem] font-semibold justify-center items-center text-white">
+                2
+              </span>
+            </span>
+
+            <CiShoppingBasket size={25} />
           </button>
         </div>
       </div>
