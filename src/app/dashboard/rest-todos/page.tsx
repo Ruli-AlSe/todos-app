@@ -1,17 +1,16 @@
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-import prisma from "@/lib/prisma";
-import { NewTodo, TodosGrid } from "@/todos";
+import prisma from '@/lib/prisma';
+import { NewTodo, TodosGrid } from '@/todos';
 
 export const metadata = {
-  title: "CRUD API REST",
-  description: "Make a CRUD of Todos using API REST",
+  title: 'CRUD API REST',
+  description: 'Make a CRUD of Todos using API REST',
 };
 
 export default async function RestTodosPage() {
-  const todos = await prisma.todo.findMany({ orderBy: { description: "asc" } });
-  console.log("-------- page built: rest-todos");
+  const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
 
   return (
     <div>
