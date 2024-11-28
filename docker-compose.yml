@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 
 services:
   todosDB:
@@ -6,7 +6,7 @@ services:
     container_name: todos_db
     restart: always
     ports:
-      - 5432:5432
+      - 5434:5432
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
