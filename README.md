@@ -2,26 +2,36 @@
 
 Steps to setup and run the app in development
 
-1. Build DB
+1. Install dependencies
+
+```
+pnpm install
+```
+
+2. Rename .env.template to .env
+3. Replace env variables
+4. Build DB container (Docker is required)
 
 ```
 docker compose up -d
 ```
 
-2. Rename .env.template to .env
-3. Replace env variables
-4. Run application in you localhost
+5. Run prisma migrations
 
 ```
-npm run dev
+pnpm prisma migrate dev
 ```
 
-5. Run SEED to [create the local DB](http://localhost:3000/api/seed)
-
-# Prisma commands
+6. Generate prisma client
 
 ```
-npx prisma init
-npx prisma migrate dev
-npx prisma generate
+pnpm prisma generate
 ```
+
+7. Run application in you localhost
+
+```
+pnpm dev
+```
+
+8. Run SEED to [create the local DB](http://localhost:3000/api/seed)
