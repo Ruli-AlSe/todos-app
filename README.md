@@ -38,5 +38,5 @@ pnpm dev
 
 ### Note: Default user and password
 
-**user:** test@example.com
+**user:** test@example.com \
 **password:** 123456
