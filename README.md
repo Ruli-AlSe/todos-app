@@ -35,3 +35,8 @@ pnpm dev
 ```
 
 8. Run SEED to [create the local DB](http://localhost:3000/api/seed)
+
+### Note: Default user and password
+
+**user:** test@example.com
+**password:** 123456
