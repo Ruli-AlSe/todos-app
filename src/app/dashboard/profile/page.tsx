@@ -14,6 +14,8 @@ export default function ProfilePage() {
         <span>{session?.user?.name}</span>
         <span>{session?.user?.email}</span>
         <span>{session?.user?.image}</span>
+        <span>{session?.user?.id}</span>
+        <span>{session?.user?.roles?.join(', ')}</span>
       </div>
     </div>
   );
